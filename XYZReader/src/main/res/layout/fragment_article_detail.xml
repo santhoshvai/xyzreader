@@ -1,6 +1,7 @@
 <com.example.xyzreader.ui.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/draw_insets_frame_layout"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,13 +17,14 @@
             <FrameLayout
                 android:id="@+id/photo_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/photo_placeholder">
+                android:layout_height="wrap_content">
                 <!--suppress AndroidLintContentDescription -->
                 <ImageView
                     android:id="@+id/photo"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:background="@color/photo_placeholder"
                      />
 
                 <View
@@ -46,7 +48,7 @@
                     android:id="@+id/meta_bar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#333"
+                    tools:background="#333"
                     android:layout_gravity="bottom"
                     android:orientation="vertical"
                     android:paddingLeft="@dimen/detail_inner_horiz_margin"
@@ -61,10 +63,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
-                        android:fontFamily="sans-serif-condensed"
+                        android:fontFamily="sans-serif-slab"
                         android:textColor="#fff"
                         android:textStyle="bold"
-                        android:textSize="@dimen/detail_title_text_size"
                         android:lineSpacingMultiplier="0.9" />
 
                     <TextView
@@ -77,15 +78,13 @@
 
                 <TextView
                     android:id="@+id/article_body"
-                    style="?android:attr/textAppearanceMedium"
+                    style="@style/TextAppearance.AppCompat.Body1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/detail_inner_horiz_margin"
                     android:layout_marginRight="@dimen/detail_inner_horiz_margin"
+                    tools:text="@string/loremipsum"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
-                    android:textColor="@color/ltgray"
-                    android:textColorLink="@color/theme_accent"
-                    android:textSize="@dimen/detail_body_text_size"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
@@ -97,12 +96,11 @@
         android:layout_margin="@dimen/fab_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_share_black_24dp"
+        android:src="@drawable/ic_share_white_24dp"
         app:fabSize="normal"
         app:pressedTranslationZ="@dimen/fab_press_translation_z"
         app:elevation="@dimen/fab_elevation"
-        app:layout_anchor="@id/article_body"
-        app:layout_anchorGravity="bottom|right|end"
+        android:layout_gravity="bottom|end"
         android:contentDescription="@string/action_share" />
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>

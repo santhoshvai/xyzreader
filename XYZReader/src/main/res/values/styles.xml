@@ -1,35 +1,16 @@
-<!-- File created by the Android Action Bar Style Generator
-
-     Copyright (C) 2012 readyState Software Ltd
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-  
-          http://www.apache.org/licenses/LICENSE-2.0
-  
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <!-- Main theme colors -->
+        <!--https://www.materialpalette.com/deep-purple/pink-->
         <!--   your app branding color for the app bar -->
-        <item name="colorPrimary">@color/deeppurple_500</item>
+        <item name="colorPrimary">@color/primary</item>
         <!--   darker variant for the status bar and contextual app bars -->
-        <item name="colorPrimaryDark">@color/deeppurple_700</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
         <!--   theme UI controls like checkboxes and text fields -->
-        <item name="colorAccent">@color/amber_a200</item>
-
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
     </style>
-
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-
+    <style name="AppTheme" parent="AppTheme.Base"></style>
 </resources>
