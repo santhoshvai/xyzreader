@@ -11,7 +11,7 @@
 
 | MainActivity  | DetailActivity |
 | ------------- | ------------- |
-| ![mainactivity](http://i.imgur.com/ijEmTsh.gifv)  | ![detailsactivity](http://i.imgur.com/vTI7v9Z.gifv)  |
+| ![mainactivity](http://i.imgur.com/ijEmTsh.gif)  | ![detailsactivity](http://i.imgur.com/vTI7v9Z.gif)  |
 
 ## UI Review Node
 
