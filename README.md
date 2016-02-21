@@ -6,6 +6,13 @@
 
 * The job will be to take the user feedback in the UI Review node below, and implement changes that will improve the UI and make it conform to Material Design.
 
+
+## Screenshots
+
+| MainActivity  | DetailActivity |
+| ------------- | ------------- |
+| ![mainactivity](http://i.imgur.com/ijEmTsh.gifv)  | ![detailsactivity](http://i.imgur.com/vTI7v9Z.gifv)  |
+
 ## UI Review Node
 
 * “This app is starting to shape up but it feels a bit off in quite a few places. I can't put finger on it but it feels odd.”

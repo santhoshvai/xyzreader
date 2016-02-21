@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together"
+    android:duration="500">
+    <!--&lt;!&ndash;fade everything except statusbar and navigationbar&ndash;&gt;-->
+    <fade xmlns:android="http://schemas.android.com/apk/res/android">
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground"></target>
+            <target android:excludeId="@android:id/navigationBarBackground"></target>
+        </targets>
+    </fade>
+    <!--slides in from the top-->
+    <slide android:slideEdge="top">
+        <targets>
+            <target android:targetId="@id/photo_container"></target>
+        </targets>
+    </slide>
+    <!--slides in from the bottom-->
+    <slide android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@id/papersheet"></target>
+        </targets>
+    </slide>
+</transitionSet>

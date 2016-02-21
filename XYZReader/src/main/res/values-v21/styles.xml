@@ -1,5 +1,7 @@
 <resources>
     <style name="AppTheme.Detail" parent="AppTheme">
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/details_enter_transition</item>
     </style>
 </resources>
