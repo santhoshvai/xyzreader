@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <FrameLayout
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/bgmain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -38,11 +40,12 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paper_overlap"
                 android:layout_gravity="center_horizontal"
                 android:maxWidth="@dimen/detail_card_max_width"
                 android:background="#fff"
-                android:elevation="2dp"
-                android:layout_marginTop="@dimen/detail_card_top_margin">
+                app:elevation="2dp">
+                <!--android:layout_marginTop="@dimen/detail_card_top_margin">-->
 
                 <LinearLayout
                     android:id="@+id/meta_bar"
@@ -88,12 +91,13 @@
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
-        </FrameLayout>
+        </LinearLayout>
     </com.example.xyzreader.ui.ObservableScrollView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
         android:layout_margin="@dimen/fab_margin"
+        app:borderWidth="0dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_share_white_24dp"

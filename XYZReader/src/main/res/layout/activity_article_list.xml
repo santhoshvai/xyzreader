@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
+        app:elevation="@dimen/appbar_elevation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
@@ -29,6 +30,7 @@
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/bgmain"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view"
